@@ -9,8 +9,61 @@
     <title>TechPosters - Home</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <h2 class="text__page">TechPoster</h2>
+      <nav>
+        <button class="logout__page">Sair</button>
+      </nav>  
+    </header>
+    <main class="container__user">
+      <section class="header__user">
+        <div class="information__user">
+          <img src="./assets/img/user1.svg" alt="user1">
+            <div class="content__name">
+              <p class="name__user">Nome</p>
+              <p class="user__ocupation">Profissão</p>
+            </div>
+            <form>
+              <input type="text" placeholder="Digite o título do post">
+              <textarea id="big__ta" placeholder="Digitar descrição do post"></textarea>
+              <button type="submit" class="postage">Postar</button>
+            </form>
+        </div>
+      </section>
+      <div class="container__articles">
+        <h2 class="posts__page__users">Posts</h2>
+        <article>
+          <div class="posts__page">
+            <img src="./assets/img/user1.svg" alt="user1">
+              <div class="user__container__post">
+                <p class="name__user">Nome</p>
+                <p class="user__job">Profissão</p>
+              </div>
+                <h2 class="title__post">Vem vamos embora</h2>
+                <p class="description__post">Esperar não é saber, quem sabe faz hora não espera acontecer, música cantandada para afrontar o regime militar na década de 80, pelo compositor Geraldo Vandré</p>
+              <nav>
+                <button>Abrir Post</button>
+                <a class="like__post" href="">
+                  <img src="" alt="">
+                </a>
+              </nav>
+          </div>
+        </article>
+      </div>
+      <aside>
+        <h2 class="sugest">Sugestões para você Seguir</h2>
+        <div class="information__user">
+          <img src="./assets/img/user1.svg" alt="user1">
+            <div class="sugest__users">
+              <p class="name__user">Nome</p>
+              <p class="user__ocupation">Profissão</p>
+            </div>
+            <nav>
+              <button>Seguir</button>
+            </nav>
+        </div>    
+      </aside>
+    </main>
   </body>
   <script src="./script/database/users.js"></script>
   <script src="./script/database/posts.js"></script>
